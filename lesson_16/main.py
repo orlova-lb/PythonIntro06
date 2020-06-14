@@ -1,12 +1,14 @@
 import lesson_16.aval_parser as aval_parser
 import lesson_16.private_parser as private_parser
 import lesson_16.ukrsib_parser as ukrsib_parser
+import lesson_16.obmenka as obmenka_parser
 
 
 lst = [
     aval_parser.RaiffeisenBankAval(),
     private_parser.PrivateBank(),
     ukrsib_parser.UkrsibBank(),
+    obmenka_parser.ObmenkaPoint()
 ]
 
 for bank in lst:
